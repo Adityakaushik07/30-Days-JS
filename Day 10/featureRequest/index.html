@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Text Content Example</title>
+    <style>
+      p {
+        font-size: 18px;
+        margin-top: 20px;
+      }
+
+      #colorDiv {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .container {
+        padding: 20px;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+      }
+      .item {
+        padding: 10px;
+        border: 1px solid #eee;
+        margin-bottom: 5px;
+        cursor: pointer;
+      }
+      .item:hover {
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="myParagraph">Initial text content.</p>
+    <button id="changeButton">Change Text</button>
+
+    <div id="colorDiv">Hover over me</div>
+
+    <label for="textInput">Type something:</label>
+    <input type="text" id="textInput" />
+
+    <div id="output">
+      <p>Key pressed: <span id="keyPressed"></span></p>
+      <p>Input value: <span id="inputValue"></span></p>
+    </div>
+
+    <h2>Select Dropdown and Form Events Example</h2>
+
+    <form id="myForm">
+      <label for="selectFruit">Select a fruit:</label>
+      <select id="selectFruit" name="fruit">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="orange">Orange</option>
+        <option value="grape">Grape</option>
+      </select>
+      <br /><br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="output">
+      <p>Selected fruit: <span id="selectedFruit"></span></p>
+    </div>
+
+    <div id="container" class="container">
+      <!-- Initially empty, will be populated dynamically -->
+    </div>
+
+    <button id="addItemButton">Add Item</button>
+    <!-- Link to external JavaScript file -->
+    <script src="01_clickEvent.js"></script>
+    <script src="02_mouseEvent.js"></script>
+    <script src="03_keyboardEvents.js"></script>
+    <script src="04_formEvents.js"></script>
+    <script src="05_eventDelegation.js"></script>
+  </body>
+</html>
